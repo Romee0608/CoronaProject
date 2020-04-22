@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Montserrat;
+        }
+        #banner{
+            width: 100%;
+            height: 700px;
+            background-image:url("header.jpg");
+            background-size: cover;
+            color: #EFEFEF;
+            margin-bottom: 50px;
+        }
+       #filter{
+           background-color: rgba(0,0,0,0.4);
+           width: 100%;
+           height: 700px;
+           text-align: left;
+           
+       }
+       h1{
+        font-size: 50px;
+        
+       }
+       p{
+        font-size: 23px;
+        line-height: 35px;
+        padding: 20px 0;
+       }
+       .bannerText{
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-right: 100px;
+       }
+       .button{
+        width: 200px;
+        height: 50px;
+        border-radius: 16px;
+        font-size: 23px;
+        background-color: #029F82;
+        color: #EFEFEF;
+        border: 2px solid #EFEFEF;
+        
+       }
+       .button:hover{
+           transform: scale(1.5);
+           background-color:rgb(5, 145, 119);
+       }
+
+    </style>
+</head>
+<body>
+    <div id="banner" >
+        <div id="filter">
+            <div class="bannerText">
+                <h1>Highlights persconferentie</h1>
+                    <p>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                         Ut gravida libero mauris, ut mattis nibh convallis ut.<br>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                         Ut gravida libero mauris, ut mattis nibh convallis ut.<br>
+                    </p>
+             <button class="button">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
