@@ -4,123 +4,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banner</title>
     <style>
-        body{
-            margin: 0;
-            font-family: Montserrat;
-        }
-        #banner{
-            width: 100%;
-            height: 700px;
-            background-image:url("header.jpg");
-            background-size: cover;
-            color: #EFEFEF;
-            margin-bottom: 50px;
-        }
-       #filter{
-           background-color: rgba(0,0,0,0.4);
-           width: 100%;
-           height: 700px;
-           text-align: left;
-           
-       }
 
-       .bannerText{
-        float: right;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        padding-right: 8%;
-       }
-       .bannerText h1{
-        font-size: 50px;
-       }
-       .bannerText p{
-        font-size: 23px;
-        line-height: 35px;
-        padding: 20px 0;
-       }
-       .button{
-        width: 200px;
-        height: 50px;
-        border-radius: 16px;
-        font-size: 23px;
-        background-color: #029F82;
+    body{
+    margin: 0;
+    font-family: Montserrat;
+    }
+    h1{
+    font-size: 50px;
+    }
+
+    #banner{
+        width: 100%;
+        height: 700px;
+        background-image:url("header.jpg");
+        background-size: cover;
         color: #EFEFEF;
-        border: 2px solid #EFEFEF;
-        
-       }
-       /* @media screen and (max-width:900px) and (min-width:730px){
-            .bannerText{
-                 padding-right: 4%;
-            }
-       } */
-        @media screen and (max-width:799px) and (min-width:650px){
-            .bannerText{
-                padding-right: 8%;
-            }
-            .bannerText h1{
-                font-size: 40px;
-            }
-            .bannerText p{
-                font-size: 20px;
-            }
-        }
-        @media screen and (max-width:649px)and (min-width:575px){
-           .bannerText h1{
-                font-size: 35px;
-            }
-            .bannerText p{
-                font-size: 18px;
-            }
-        }
-        @media screen and (max-width:574px) and (min-width:500px)  {
-          
-           .bannerText h1{
-                font-size: 30px;
-            }
-            .bannerText p{
-                font-size: 16px;
-            } 
-            .button{
-                width: 180px;
-                height: 45px;
-                font-size: 20px;
-            }
-        }
-        @media screen and (max-width:499px) and (min-width:410px) {
-            .bannerText{
-                padding-right: 4%;
-           }
-           .bannerText h1{
-                font-size: 28px;
-            }
-            .bannerText p{
-                font-size: 14px;
-            } 
-            .button{
-                width: 180px;
-                height: 45px;
-                font-size: 20px;
-            }
-        }
-        @media screen and (max-width:409px){
-            .bannerText{
-                padding-right: 4%;
-           }
-           .bannerText h1{
-                font-size: 20px;
-            }
-            .bannerText p{
-                font-size: 12px;
-            } 
-            .button{
-                width: 180px;
-                height: 45px;
-                font-size: 20px;
-            }
-        }
-       
+        margin-bottom: 50px;
+    }
 
+     #filter{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 700px;
+    text-align: left;   
+    }
+
+    .bannerText{
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10%;
+    }
+
+    .bannerText p{
+    font-size: 23px;
+    line-height: 35px;
+    padding: 20px 0;
+    }
+
+    button{
+    background-color: #029F82;
+    width: 150px;
+    text-align: center;
+    color: #efefef;
+    padding: 8px;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    }
+
+    @media screen and (max-width:1400px){
+     h1{font-size: 40px;}
+     .bannerText p{font-size: 20px;}
+     }
+
+    @media screen and (max-width:1200px){
+     h1{font-size: 35px;}
+    .bannerText p{font-size: 18px;}
+    }
+
+    @media screen and (max-width:600px){
+        .bannerText{padding-right: 5%;}
+    h1{font-size: 24px;}
+    .bannerText p{font-size: 14px;}
+    }
+
+    @media screen and (max-width:420px){
+        .bannerText{padding-right: 4%;}
+    h1{font-size: 20px;}
+    .bannerText p{font-size: 11px;}
+    }
+    
     </style>
 </head>
 <body>
@@ -134,7 +90,7 @@
                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                          Ut gravida libero mauris, ut mattis nibh convallis ut.<br>
                     </p>
-             <button class="button">Read More</button>
+             <button>Read More</button>
             </div>
         </div>
     </div>
