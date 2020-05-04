@@ -21,6 +21,12 @@ h3 {
     margin-bottom: 0;
 }
 
+a {
+    margin: 5px 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 hr {
     background-color: #029F82;
     border: none;
@@ -42,13 +48,23 @@ button {
 
 button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
 
-/* Banner Styling [Home] */
+/* Banner Styling */
     
 #banner {
     width: 100%;
     height: 700px;
     background-image:url("header.jpg");
     background-size: cover;
+    color: #EFEFEF;
+    margin-bottom: 50px;
+}
+
+#smallBanner {
+    width: 100%;
+    height: 350px;
+    background-image:url("header.jpg");
+    background-size: cover;
+    background-position: 0 -240px;
     color: #EFEFEF;
     margin-bottom: 50px;
 }
@@ -60,6 +76,13 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
     text-align: left;    
 }
 
+#smallFilter {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 350px;
+    text-align: left;
+}
+
 .bannerText {
     float: right;
     position: relative;
@@ -67,7 +90,6 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
     transform: translateY(-50%);
     padding-right: 8%;
 }
-
 .bannerText p {font-size: 23px; line-height: 35px; padding: 20px 0;}
 
 @media screen and (max-width:1400px) {
@@ -92,36 +114,34 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
     .bannerText p {font-size: 11px;}
 }
 
-/* Richtlijnen Styling [Home] */
+/* Intro Styling */
 
 #contentContainer {
     width: 100%;
 }
 
-#richtlijnenDiv {
+#introDiv {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: #efefef;
 }
+#introDiv p {display: inline-block; margin-top: 10px; margin-bottom: 30px;}
+#introDiv hr {width: 115px; float: left;}
 
-#richtlijnenDiv p {display: inline-block; margin-top: 10px; margin-bottom: 30px;}
-#richtlijnenDiv hr {width: 115px; float: left;}
-
-#richtlijnenGrid {
+#introGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
 }
 
-#richtlijnImageDiv {
+#introImageDiv {
    top: 0;
    transform: none;
 }
+#introImageDiv img {height: auto; width: 100%;}
 
-#richtlijnImageDiv img {height: auto; width: 100%;}
-
-#richtlijnTextDiv {
+#introTextDiv {
     margin: 50px 0;
 }
 
@@ -130,7 +150,7 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
 }
 
 @media (max-width: 1000px) {
-    #richtlijnenGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 20px;}
+    #introGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 20px;}
 }
 
 /* Nieuws Styling [Home] */
@@ -154,13 +174,11 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
 .articleThumbnail {
    max-height: 250px;
 }
-
 .articleThumbnail img {width: 100%; height: auto; max-height: 250px;}
 
 .articleContent {
    padding: 0 20px 20px;
 }
-
 .articleContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
 .articleContent hr {width: 100px; float: left;}
 
@@ -182,7 +200,6 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
    color: #4a4a4ae8;
    transition: all 0.4s;
 }
-
 .newsPost a:hover {color: #029F82;}
 
 @media (max-width: 1400px) {
@@ -200,7 +217,6 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
 .newsHighlightsTitle {
    margin-bottom: 50px;
 }
-
 .newsHighlightsTitle hr {height: 5px; width: 100px;}
 .newsHighlightsTitle h2 {text-align: center; color: #efefef;}
 
@@ -214,3 +230,131 @@ button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
     color: #efefef;
     transition: all 0.4s;
 }
+
+/* Standaard adviezen styling [Richtlijnen] */
+
+#standaardAdvContainer {
+    width: 80%;
+    margin: 0 auto 100px;
+} 
+ 
+.standaardAdvTitle {
+    margin-bottom: 50px;
+}
+.standaardAdvTitle hr {height: 5px; width: 100px;}
+.standaardAdvTitle h2 {text-align: center; color: #efefef;}
+ 
+#standaardAdvGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+ 
+.standaardAdvPost {
+    background-color: #efefef;
+    color: #1D2730;
+}
+ 
+.standaardAdvThumbnail {
+    max-height: 250px;
+}
+.standaardAdvThumbnail img {width: 100%; height: auto; max-height: 250px;}
+ 
+.standaardAdvContent {
+    padding: 0 20px 20px;
+}
+.standaardAdvContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
+.standaardAdvContent hr {width: 100px; float: left;}
+ 
+.readMore {
+    display: block !important;
+    font-size: 16px !important;
+}
+ 
+@media (max-width: 1400px) {
+    #standaardAdvGrid {grid-gap: 50px;}
+}
+ 
+@media (max-width: 1200px) {
+    #standaardAdvGrid {grid-template-columns: repeat(3, 1fr); grid-gap:25px;}
+}
+ 
+@media (max-width: 700px) {
+    #standaardAdvGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 25px;}
+}
+
+/* Voorlopige maatregelen styling [Richtlijnen] */
+
+#voorlopigeMaatContainer {
+    width: 80%;
+    margin: 0 auto;
+} 
+ 
+.voorlopigeMaatTitle {
+    margin-bottom: 50px;
+}
+.voorlopigeMaatTitle hr {height: 5px; width: 100px;}
+.voorlopigeMaatTitle h2 {text-align: center; color: #efefef;}
+ 
+#voorlopigeMaatGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    margin: 0 5%;
+}
+ 
+.voorlopigeMaatContent {
+    padding: 0 20px 20px;
+    background-color: #192127;
+}
+.voorlopigeMaatContent h3 {text-align: center; margin: 20px;}
+.voorlopigeMaatContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
+.voorlopigeMaatContent hr {width: 100%; height: 3px;}
+
+#uitzonderingenText {
+    background-color: #efefef;
+    color: #192127;
+    padding: 10px;
+    margin: 20px 0 0;
+    display: none;
+    height: 0;
+    font-size: 14px;
+}
+.uitzonderingenToggle {display: block !important; height: auto !important;}
+ 
+@media (max-width: 1400px) {
+    #voorlopigeMaatGrid {grid-gap: 50px; margin: 0;}
+}
+ 
+@media (max-width: 1000px) {
+    #voorlopigeMaatGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 25px;}
+}
+
+/* FAQ Styling [FAQ]*/
+
+#faqContainer {
+    width: 80%;
+    margin: 0 auto 100px;
+}
+
+.singleQuestion {
+    padding: 20px 40px;
+    background-color: #192127;
+    margin: 0 0 50px;
+}
+
+.faqLine {
+    background-color: #029f82;
+    width: 4px;
+    height: 75px;
+    float: left;
+    margin: 20px 20px 0 10px;
+}
+
+/*Privacy Styling [Privacy-av]*/
+
+#privacyContainer {
+    width: 80%;
+    margin: 100px auto;
+}
+#privacyContainer h3 {margin-top: 40px;}

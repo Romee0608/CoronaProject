@@ -88,7 +88,7 @@
     height: 55px;
     background-color: #151B20;
 }
-.copyrightContent p {text-align: center; font-size: 12px; padding: 20px 0 20px 0;}
+.copyrightContent p {text-align: center; font-size: 12px; padding: 20px 0 20px 0; margin: 0;}
 
 @media screen and (max-width: 750px) /* on mobile*/ {
     .footerGrid{display: grid; grid-auto-rows: 200px; grid-column-gap: 20px; height:100%; grid-template-areas: "contentAboutUs" "contentContact" "contentMenu";}
