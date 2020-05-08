@@ -1,0 +1,159 @@
+<!DOCTYPE html >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Header Coronet</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<style>
+
+    *{transition: all 0.4s}
+
+    body
+    {
+        margin: 0;
+        font-family: Montserrat;
+        color: #efefef;
+    }
+    #headerContainer
+    {
+        width:100%;
+        height: minmax(100px auto);
+        background-color:#1D2730;
+    }
+
+    .headerContent
+    {
+        width: 85%;  
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 1024px) /* on tablet an smaller*/
+    {
+      .headerGrid
+          {
+              display: grid;
+              width:100%;
+              grid-auto-rows: 100px;
+              grid-column-gap: 20px;
+              
+              grid-template-areas: 
+              "headerLogo" 
+              "headerMenu";
+          }
+      .headerLogo
+          {
+              margin-top: 20px;
+              text-align: center;
+          }
+      .headerMenu
+          {
+              margin: 0 auto;
+          }
+      .headerMenu li
+          {
+              padding: 36px 60px !important;
+              font-size: 34px !important;
+          }
+    }
+
+    @media screen and (min-width: 1024px) /* on desktop/laptop*/
+    {
+      .headerGrid
+          {
+              display: grid;
+              width:100%;
+              grid-template-columns:  repeat(2, 1fr);
+              grid-auto-rows: 100px;
+              grid-column-gap: 20px;
+              
+
+              grid-template-areas: 
+              "headerLogo headerMenu";
+          }
+    }
+
+      .headerLogo
+        {
+          display: grid;
+          grid-area: headerLogo;
+        }
+          
+      .headerLogo img
+          {
+              max-width: 50%;
+          }
+
+      .headerMenu
+      {
+        display: grid;
+        grid-area: headerMenu;
+      }
+
+      .headerMenu ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float:right;
+    }
+
+    .headerMenu li
+    {
+        float: left;
+        font-size: 24px;
+        padding:36px 0 36px 115px;
+    }
+
+    .headerMenu a
+    {
+        text-decoration: none;
+        color:#efefef;
+    }
+
+    .headerMenu a:hover
+    {
+        text-shadow: 0 0 10px #efefef;
+               
+    }
+
+    
+</style>
+
+
+</head>
+
+<body>
+    
+ <!-- @section ("header") -->
+    <div id="headerContainer">
+        <div class="headerContent">
+          <div class="headerGrid">
+
+              <div class="headerLogo">
+                  <a href="#"><img src="LOGO.png" alt="Coronet Logo"></a>
+              </div>
+            
+            
+              <div class="headerMenu">
+                  <ul>  
+                      <li><a href="#">Richtlijnen</a></li>
+                      <li><a href="#">Nieuws</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+<!-- @endsection -->
+ 
+
+    
+</body>
+</html>
