@@ -1,0 +1,78 @@
+        body {
+            margin: 0;
+            font-family: Montserrat;
+            color: #efefef;
+            background-color: #1D2730; 
+        }
+
+        #adminLogin {
+            background-color: #2B3844;
+            width: 30%;
+    margin: 0 auto;
+    padding: 10px 0 40px 0;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+        }
+
+        img {
+            width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0;
+        }
+
+        input::placeholder {
+            color: #CECECE;
+            opacity: 0.7;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto 20px;
+            background-color: #354656;
+            border: solid 2px #4D6377;
+            border-radius: 5px;
+            height: 50px;
+            width: 70%;
+            font-size: 16px;
+            color: #CECECE;
+            padding: 0 15px;
+        }
+
+        #adminCopyright {
+            background-color: #192127;
+            color: #707070;
+        }
+
+        #content {
+            height: 100vh;
+            position: relative;
+        }
+
+        button {
+            background-color: #029F82;
+    border: solid 2px #029F82;
+    width: 75%;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: 60px;
+        }
+
+        .resetPwd a {
+            color: #ffffff91;
+    text-decoration: none;
+        }
+
+        .resetPwd {
+  text-align: center; 
+    font-size: 12px;
+        }
+
+        .loginTitle {
+            text-align: center;
+        }
