@@ -1,0 +1,835 @@
+/* Algemene Styling */
+
+body {
+
+    font-family: Montserrat;
+
+    background-color: #202b35;
+
+    color: #efefef;
+
+    margin: 0;
+
+}
+
+
+
+h1 {
+
+   font-size: 50px;
+
+}
+
+
+
+h2 {
+
+   font-size: 30px;
+
+   margin: 0;
+
+}
+
+
+
+h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 0;
+
+}
+
+
+
+a {
+
+    margin: 5px 0;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+
+}
+
+
+
+hr {
+
+    background-color: #029F82;
+
+    border: none;
+
+    height: 5px;
+
+}
+
+
+
+button {
+
+    background-color: #029F82;
+
+    width: 150px;
+
+    text-align: center;
+
+    color: #efefef;
+
+    padding: 8px;
+
+    border: 2px solid #efefef;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    transition: all 0.4s;
+
+}
+
+button:hover {box-shadow: 0px 2px 9px 0px #000000ad;}
+
+
+
+/* Banner Styling */
+
+    
+
+#banner {
+
+    width: 100%;
+
+    height: 700px;
+
+    background-image:url("../images/header.jpg");
+
+    background-size: cover;
+
+    color: #EFEFEF;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+#smallBanner {
+
+    width: 100%;
+
+    height: 150px;
+
+    background-image:url("../images/header.jpg");
+
+    background-size: cover;
+
+    color: #EFEFEF;
+
+}
+
+
+
+@media screen and (min-width: 700px) /* banner mobile fix */ {
+
+    
+
+    #smallBanner {
+
+        background-position: 0 -140px;
+
+    }
+
+    
+
+}
+
+
+
+#filter {
+
+    background-color: rgba(0,0,0,0.4);
+
+    width: 100%;
+
+    height: 700px;
+
+    text-align: left;    
+
+}
+
+
+
+#smallFilter {
+
+    background-color: rgba(0,0,0,0.4);
+
+    width: 100%;
+
+    height: 150px;
+
+    text-align: left;
+
+}
+
+
+
+.bannerText {
+
+    float: right;
+
+    position: relative;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    padding-right: 8%;
+
+}
+
+.bannerText p {font-size: 23px; line-height: 35px; padding: 20px 0;}
+
+
+
+@media screen and (max-width:1400px) {
+
+    h1 {font-size: 40px;}
+
+    .bannerText p {font-size: 20px;}
+
+}
+
+
+
+@media screen and (max-width:1200px){
+
+    h1 {font-size: 35px;}
+
+   .bannerText p {font-size: 18px;}
+
+}
+
+
+
+@media screen and (max-width:600px){
+
+    h1 {font-size: 24px;}
+
+    .bannerText {padding-right: 5%;}
+
+    .bannerText p {font-size: 14px;}
+
+}
+
+
+
+@media screen and (max-width:420px){
+
+    h1 {font-size: 20px;}
+
+    .bannerText {padding-right: 4%;}
+
+    .bannerText p {font-size: 11px;}
+
+}
+
+
+/* Intro Styling */
+
+
+
+#contentContainer {
+
+    width: 100%;
+
+}
+
+
+
+#introDiv {
+
+    width: 80%;
+
+    margin: 0 auto;
+
+    margin-bottom: 50px;
+
+    color: #efefef;
+
+}
+
+#introDiv p {display: inline-block; margin-top: 10px; margin-bottom: 30px;}
+
+#introDiv hr {width: 115px; float: left;}
+
+
+
+#introGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 100px;
+
+}
+
+
+
+#introImageDiv {
+
+    top: 0;
+
+    transform: none;
+
+}
+
+#introImageDiv img {height: auto; width: 100%;}
+
+
+
+#introTextDiv {
+
+    margin: 50px 0;
+
+}
+
+
+
+@media (max-width: 1700px) {
+
+    #imageDiv {top: 50%; transform: translateY(50px);}
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    #introGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 20px;}
+
+}
+
+
+
+/* Nieuws Styling [Home] */
+
+
+
+#newsContainer {
+
+    width: 80%;
+
+    margin: 0 auto;
+
+}
+
+
+
+#newsGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 50px;
+
+}
+
+
+
+.newsPost {
+
+    background-color: #efefef;
+
+    color: #1D2730;
+
+}
+
+
+
+.articleThumbnail {
+
+    max-height: 250px;
+
+}
+
+.articleThumbnail img {width: 100%; height: auto; max-height: 250px;}
+
+
+
+.articleContent {
+
+    padding: 0 20px 20px;
+
+}
+
+.articleContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
+
+.articleContent hr {width: 100px; float: left;}
+
+
+
+.readMore {
+
+    display: block !important;
+
+    font-size: 16px !important;
+
+    margin: 5px 0;
+
+    text-decoration: underline;
+
+}
+
+
+
+.bron {
+
+    margin: 10px 0 0 !important;
+
+    font-size: 12px !important;
+
+    color: #4a4a4ae8;
+
+}
+
+
+
+.newsPost a {
+
+    text-decoration: none;
+
+    color: #4a4a4ae8;
+
+    transition: all 0.4s;
+
+}
+
+.newsPost a:hover {color: #029F82;}
+
+
+
+@media (max-width: 1400px) {
+
+    #newsGrid {
+
+        grid-gap: 20px;
+
+    }
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+    #newsGrid {
+
+        grid-template-columns: 
+
+        repeat(2, 1fr); 
+
+        grid-gap: 20px;
+
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    #newsGrid {
+
+        grid-template-columns: 
+
+        repeat(1, 1fr); 
+
+        grid-gap: 20px;
+
+    }
+
+}
+
+
+
+.newsHighlightsTitle {
+
+    margin-bottom: 50px;
+
+}
+
+.newsHighlightsTitle hr {height: 5px; width: 100px;}
+
+.newsHighlightsTitle h2 {text-align: center; color: #efefef;}
+
+
+
+.goNewsPage p {
+
+    text-align: center;
+
+    font-size: 19px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.goNewsPage a {
+
+    color: #efefef;
+
+    transition: all 0.4s;
+
+}
+
+
+
+/* Standaard adviezen styling [Richtlijnen] */
+
+
+
+#standaardAdvContainer {
+
+    width: 80%;
+
+    margin: 0 auto 100px;
+
+} 
+
+ 
+
+.standaardAdvTitle {
+
+    margin-bottom: 50px;
+
+}
+
+.standaardAdvTitle hr {height: 5px; width: 100px;}
+
+.standaardAdvTitle h2 {text-align: center; color: #efefef;}
+
+ 
+
+#standaardAdvGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 100px;
+
+}
+
+ 
+
+.standaardAdvPost {
+
+    background-color: #efefef;
+
+    color: #1D2730;
+
+}
+
+ 
+
+.standaardAdvThumbnail {
+
+    max-height: 250px;
+
+}
+
+.standaardAdvThumbnail img {width: 100%; height: auto; max-height: 250px;}
+
+ 
+
+.standaardAdvContent {
+
+    padding: 0 20px 20px;
+
+}
+
+.standaardAdvContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
+
+.standaardAdvContent hr {width: 100px; float: left;}
+
+ 
+
+.readMore {
+
+    display: block !important;
+
+    font-size: 16px !important;
+
+}
+
+ 
+
+@media (max-width: 1400px) {
+
+    #standaardAdvGrid {grid-gap: 50px;}
+
+}
+
+ 
+
+@media (max-width: 1200px) {
+
+    #standaardAdvGrid {grid-template-columns: repeat(3, 1fr); grid-gap:25px;}
+
+}
+
+ 
+
+@media (max-width: 700px) {
+
+    #standaardAdvGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 25px;}
+
+}
+
+
+
+/* Voorlopige maatregelen styling [Richtlijnen] */
+
+
+
+#voorlopigeMaatContainer {
+
+    width: 80%;
+
+    margin: 0 auto;
+
+} 
+
+ 
+
+.voorlopigeMaatTitle {
+
+    margin-bottom: 50px;
+
+}
+
+.voorlopigeMaatTitle hr {height: 5px; width: 100px;}
+
+.voorlopigeMaatTitle h2 {text-align: center; color: #efefef;}
+
+ 
+
+#voorlopigeMaatGrid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 100px;
+
+    margin: 0 5%;
+
+}
+
+ 
+
+.voorlopigeMaatContent {
+
+    padding: 0 20px 20px;
+
+    background-color: #192127;
+
+}
+
+.voorlopigeMaatContent h3 {text-align: center; margin: 20px;}
+
+.voorlopigeMaatContent p {font-size: 14px; display: inline-block; margin-top: 5px;}
+
+.voorlopigeMaatContent hr {width: 100%; height: 3px;}
+
+
+
+#uitzonderingenText {
+
+    background-color: #efefef;
+
+    color: #192127;
+
+    padding: 10px;
+
+    margin: 20px 0 0;
+
+    display: none;
+
+    height: 0;
+
+    font-size: 14px;
+
+}
+
+.uitzonderingenToggle {display: block !important; height: auto !important;}
+
+ 
+
+@media (max-width: 1400px) {
+
+    #voorlopigeMaatGrid {grid-gap: 50px; margin: 0;}
+
+}
+
+ 
+
+@media (max-width: 1000px) {
+
+    #voorlopigeMaatGrid {grid-template-columns: repeat(1, 1fr); grid-gap: 25px;}
+
+}
+
+
+
+/* FAQ Styling [FAQ]*/
+
+
+
+#faqContainer {
+
+    width: 80%;
+
+    margin: 0 auto 100px;
+
+}
+
+
+
+.singleQuestion {
+
+    padding: 20px 40px;
+
+    background-color: #192127;
+
+    margin: 0 0 50px;
+
+    min-height: 150px;
+
+}
+
+
+
+.faqLine {
+
+    background-color: #029f82;
+
+    width: 4px;
+
+    height: 75px;
+
+    float: left;
+
+    margin: 20px 20px 0 10px;
+
+}
+
+
+
+/*Privacy Styling [Privacy-av]*/
+
+
+
+#privacyContainer {
+
+    width: 80%;
+
+    margin: 100px auto;
+
+}
+
+#privacyContainer h3 {margin-top: 40px;}
+
+/* Single Article Page */
+
+#singleArticle {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    color: #1D2730;
+}
+
+.artThumbnail {
+    background-image: url(../images/thumbnail.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+.artText {
+    padding: 50px 40px;
+}
+
+.artTitle {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.artByline, .artSource {
+    font-size: 13px;
+}
+
+.artExcerpt {
+    font-weight: bold;
+}
+
+.artSource a {
+    color: #1D2730;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    #singleArticle {
+        width: 80%;
+    }
+    
+    .artThumbnail {
+        height: 500px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+
+    .artThumbnail {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #singleArticle {
+        width: 90%;
+    }
+    
+    .artThumbnail {
+        height: 300px;
+    }
+
+    .artTitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .artThumbnail {
+        height: 250px;
+    }
+
+    .artText {
+        padding: 30px 25px;
+    }
+
+    .artTitle {
+        font-size: 25px;
+    }
+}
