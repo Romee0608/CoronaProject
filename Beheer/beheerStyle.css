@@ -93,13 +93,14 @@ body {
   
   .main {
       margin-left: 200px;
-      font-size: 28px;
+      font-size: 16px;
       margin-top: 94px;
-      padding: 40px 40px;
+      padding: 40px 80px;
   }
   
   .main h2 {
       margin: 0;
+      font-size: 30px;
   }
   
   @media screen and (max-height: 450px) {
@@ -107,6 +108,11 @@ body {
     .sidenav a {font-size: 18px;}
   }
   
+  .beheerEditorTemp label
+  {
+      font-size: 18px;
+      
+  }
   /* footer Beheerpagina */
   
       .copyrightBeheerContent
