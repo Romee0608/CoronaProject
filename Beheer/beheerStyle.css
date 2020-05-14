@@ -1,0 +1,129 @@
+body {
+    font-family: Montserrat;
+    margin: 0;
+  }
+  
+  /* header Beheerpagina */
+  
+  .headerBeheerContent
+          {
+              width: 100%;  
+              background-color:#1D2730;
+              position: fixed;
+              top: 0;
+              left: 0;
+              right: 0;
+              color: white;
+              z-index: 1;
+          }
+  
+          .headerBeheerGrid
+          {
+              width: 85%;
+              display: grid;
+              grid-template-columns:  repeat(2, 50%);
+              margin: 0 auto;
+          }
+  
+          .headerBeheerUser
+          {
+              text-align: right;
+          }
+  
+          .headerBeheerUser i
+          {
+              color: #efefef;
+          }
+  
+          .headerBeheerLogo img
+          {
+              height: 80px;
+              padding: 5px 0;
+          }
+  
+          .rotate i:hover
+          {
+              color: #efefef;
+              transform: rotateZ(150deg);
+          }
+  
+          .borderLogout
+          {
+              border-radius: 5px;
+              background-color: #374754;
+              padding: 8px 14px;
+          }
+  
+          .borderLogout i {
+              margin-right: 8px;
+          }
+  
+          a.borderLogout {
+              color: #efefef;
+              text-decoration: none;
+          }
+  
+  
+  .sidenav {
+    height: 85%;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    background-color: #363F47;
+    overflow-x: hidden;
+    z-index: -1;
+  }
+  
+  .sidenav a {
+      padding: 12px 8px 12px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #efefef;
+      display: block;
+      border-bottom: 1.5px solid #2C3339;
+  }
+  
+  .sidenav i {
+      margin: 0 10px 0 0;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+      margin-left: 200px;
+      font-size: 28px;
+      margin-top: 94px;
+      padding: 40px 40px;
+  }
+  
+  .main h2 {
+      margin: 0;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  /* footer Beheerpagina */
+  
+      .copyrightBeheerContent
+      {
+          width: 100%;
+          background-color: #151B20;
+          display: table;
+          z-index: 1;
+          position: fixed;
+          bottom: 0;
+      }
+      .copyrightBeheerContent p
+      {
+          text-align: center;
+          font-size: 12px;
+          display: table-cell;
+          vertical-align: middle;
+          color: #efefef;
+          padding: 20px 0;
+      }
